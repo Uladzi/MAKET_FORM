@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>MAKET_FORM</title>
 </head>
 
 <body>
-    <form>
-        <label>Фамилия:<input type="text"></label><br>
-        <label>Имя:<input type="text"></label><br>
-        <label>Отчество:<input type="text"></label><br>
-        <label>E-mail для связи:<input type="text"></label><br>
-        <span>Согласен с правилами сайта:<input type="checkbox" checked></span><br>
-        <input type="submit" value="Регистрация">
+    <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+    <form method="POST" action="#" target="_blank">
+        <div class="blockFloat">Название статьи:</div>
+        <div class="blockBlock"><input class="textField" type="text" name="articleName"></div>
+        <div class="blockFloat">Рубрика:</div>
+        <div class="blockBlock"><select name="rubric"><option value="1">компьютерная графика</option><option value="2">графика и дизайн</option><option value="3" selected>программирование</option></select></div>
+        <div class="blockFloat">Публикация:</div>
+        <div class="blockBlock radioBlock">
+            <div><label><input type="radio" name="publicName" value="1"><span>на сайте</span></label></div>
+            <div><label><input type="radio" name="publicName" value="2"><span>в журнале</span></label></div>
+            <div><label><input type="radio" name="publicName" value="3"><span>на сайте и в журнале</span></label></div>
+        </div>
+        <div>Разрешить комментарии:<input type="checkbox" name="comments" checked></div>
+        <div>Текст статьи:<br><textarea class="textField" name="articleContent"></textarea></div>
+        <input type="submit" value="Опубликовать">
+
     </form>
 </body>
 

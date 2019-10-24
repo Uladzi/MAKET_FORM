@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+select {
+    font-size: 15px;
+}
+
+.blockBlock .textField,
+select {
+    position: relative;
+    bottom: 2px;
+}
+
+.textField {
+    width: 100%;
+}
+
+.blockBlock {
+    padding: 1px;
+}
+
+@media only all and (min-width:535px) {
+    .blockBlock {
+        margin-left: 175px;
+        width: 100%;
+    }
+    .blockFloat {
+        width: 175px;
+        float: left;
+    }
+    .radioBlock div {
+        display: inline-block;
+    }
+    span {
+        top: -3px;
+        position: relative;
+    }
+}
