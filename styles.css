@@ -24,7 +24,6 @@ select {
 @media only all and (min-width:535px) {
     .blockBlock {
         margin-left: 175px;
-        width: 100%;
     }
     .blockFloat {
         width: 175px;
